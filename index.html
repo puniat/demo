@@ -6,61 +6,74 @@
       font-family: Arial, sans-serif;
       margin: 0;
       background: #f5f6fa;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    .img-box {
+      width: 100%;
+      height: 300px;
+      background: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0;
+      color: #666;
+      font-size: 14px;
     }
 
     .navbar {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
       background: #222;
       padding: 15px;
+      text-align: center;
     }
 
     .navbar a {
       color: white;
+      margin: 0 15px;
       text-decoration: none;
-      font-size: 16px;
-    }
-
-    .container {
-      text-align: center;
-      padding: 40px;
-    }
-
-    .card {
-      display: inline-block;
-      margin: 15px;
-      padding: 20px;
-      width: 220px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    .card a {
-      text-decoration: none;
-      color: #222;
-      font-weight: bold;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="navbar">
-    <a href="sample1/">Graphs</a>
-    <a href="sample2/">About</a>
-    <a href="sample3/">Sources</a>
+<div class="navbar">
+  <a href="sample1/">Graphs</a>
+  <a href="sample2/">About</a>
+  <a href="sample3/">Sources</a>
+</div>
+
+<div class="container">
+
+  <h1>Correlation Between Education Level and Income</h1>
+
+  <p>
+    This project aims to analyze the correlation between education levels and income using a Bayesian regression model.
+    It visualizes income data against various education levels to explore the common belief that higher education correlates strongly with higher income.
+  </p>
+
+  <div class="img-box">
+    Graph will appear here (Python output)
   </div>
 
-  <div class="container">
-    <h1>Data Science Dashboard</h1>
-    <p>Correlation Between Education Level and Income</p>
+  <p>
+    Education levels may not influence income as significantly as commonly believed.
+    Data for this analysis is sourced from the Kaggle dataset “Income Data,” which includes income, education level, age, race, sex, and more.
+    Although higher education can correlate with higher income in some cases, the relationship is not always strong or consistent.
+  </p>
 
-    <div class="card"><a href="sample1/">📊 Graphs</a></div>
-    <div class="card"><a href="sample2/">👤 About</a></div>
-    <div class="card"><a href="sample3/">📚 Sources</a></div>
-  </div>
+</div>
 
 </body>
 </html>
