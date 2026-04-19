@@ -1,48 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-      }
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f6fa;
+    }
 
-      /* top bar */
-      .navbar {
-        display: flex;
-        gap: 20px;
-        background-color: #222;
-        padding: 15px;
-        justify-content: center;
-      }
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      background: #222;
+      padding: 15px;
+    }
 
-      .navbar a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-      }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
 
-      .navbar a:hover {
-        text-decoration: underline;
-      }
+    .container {
+      text-align: center;
+      padding: 40px;
+    }
 
-      .content {
-        padding: 20px;
-        text-align: center;
-      }
-    </style>
-  </head>
+    .card {
+      display: inline-block;
+      margin: 15px;
+      padding: 20px;
+      width: 220px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
 
-  <body>
-    <div class="navbar">
-      <a href="sample1/">Income Analysis</a>
-      <a href="sample2/">Education Trends</a>
-      <a href="sample3/">Gender Distribution</a>
-    </div>
+    .card a {
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+    }
+  </style>
+</head>
 
-    <div class="content">
-      <h1>Data Science Project Dashboard</h1>
-      <p>Welcome! Click a project above.</p>
-    </div>
-  </body>
+<body>
+
+  <div class="navbar">
+    <a href="sample1/">Graphs</a>
+    <a href="sample2/">About</a>
+    <a href="sample3/">Sources</a>
+  </div>
+
+  <div class="container">
+    <h1>Data Science Dashboard</h1>
+    <p>Correlation Between Education Level and Income</p>
+
+    <div class="card"><a href="sample1/">📊 Graphs</a></div>
+    <div class="card"><a href="sample2/">👤 About</a></div>
+    <div class="card"><a href="sample3/">📚 Sources</a></div>
+  </div>
+
+</body>
 </html>
