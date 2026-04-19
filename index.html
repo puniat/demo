@@ -10,9 +10,38 @@
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900" rel="stylesheet" />
 
     <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+        .overview-section {
+            padding: 6rem 0;
+            background: #111418;
+        }
+
+        .card-clean {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 18px;
+            padding: 2rem;
+            height: 100%;
+            transition: 0.2s ease;
+        }
+
+        .card-clean:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .card-clean h3 {
+            color: white;
+        }
+
+        .card-clean p {
+            color: rgba(255,255,255,0.7);
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -21,7 +50,7 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container px-4 px-lg-5">
 
-        <a class="navbar-brand" href="#page-top">Data Science Project</a>
+        <a class="navbar-brand" href="index.html">Data Science Project</a>
 
         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
             Menu <i class="fas fa-bars"></i>
@@ -31,15 +60,15 @@
             <ul class="navbar-nav ms-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="sample1/">Graphs</a>
+                    <a class="nav-link" href="sample1/index.html">Graphs</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="sample2/">About</a>
+                    <a class="nav-link" href="sample2/index.html">About</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="sample3/">Sources</a>
+                    <a class="nav-link" href="sample3/index.html">Sources</a>
                 </li>
 
             </ul>
@@ -48,7 +77,7 @@
     </div>
 </nav>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <header class="masthead">
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="text-center">
@@ -57,11 +86,12 @@
                 Education & Income
             </h1>
 
-            <h2 class="text-white-50 mx-auto mt-2 mb-5">
-                A data science project analyzing the relationship between education level and income using Python-generated visualizations and real-world data from Kaggle.
+            <h2 class="text-white-50 mx-auto mt-2 mb-5" style="max-width: 700px;">
+                A data science project analyzing how education level influences income,
+                using Python visualizations and real-world data.
             </h2>
 
-            <a class="btn btn-primary" href="sample1/">
+            <a class="btn btn-primary" href="sample1/index.html">
                 View Graphs
             </a>
 
@@ -69,21 +99,46 @@
     </div>
 </header>
 
-<!-- ABOUT PREVIEW (simple version) -->
-<section class="about-section text-center">
+<!-- OVERVIEW SECTION -->
+<section class="overview-section text-center">
     <div class="container px-4 px-lg-5">
 
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8">
+        <h2 class="text-white mb-4">Project Overview</h2>
 
-                <h2 class="text-white mb-4">Project Overview</h2>
+        <p class="text-white-50 mb-5" style="max-width: 700px; margin:auto;">
+            This project explores whether higher education levels truly lead to higher income.
+            Using Python, we analyze relationships across education, age, race, gender, and work class.
+        </p>
 
-                <p class="text-white-50">
-                    This project explores whether higher education levels truly lead to higher income.
-                    Using Python, we analyze and visualize relationships between education, age, race, gender, and income.
-                </p>
+        <div class="row gx-4 gy-4">
 
+            <div class="col-md-4">
+                <a href="sample1/index.html" style="text-decoration: none;">
+                    <div class="card-clean">
+                        <h3>Graphs</h3>
+                        <p>View the data visualizations and key findings.</p>
+                    </div>
+                </a>
             </div>
+
+            <div class="col-md-4">
+                <a href="sample2/index.html" style="text-decoration: none;">
+                    <div class="card-clean">
+                        <h3>About</h3>
+                        <p>Learn about the project and its purpose.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="sample3/index.html" style="text-decoration: none;">
+                    <div class="card-clean">
+                        <h3>Sources</h3>
+                        <p>Explore the dataset and tools used.</p>
+                    </div>
+                </a>
+            </div>
+
         </div>
 
     </div>
