@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+
+      /* top bar */
+      .navbar {
+        display: flex;
+        gap: 20px;
+        background-color: #222;
+        padding: 15px;
+        justify-content: center;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+
+      .content {
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
   <body>
-    <h1>Data Science Project Dashboard</h1>
+    <div class="navbar">
+      <a href="sample1/">Income Analysis</a>
+      <a href="sample2/">Education Trends</a>
+      <a href="sample3/">Gender Distribution</a>
+    </div>
 
-    <p>Welcome! Click a project below:</p>
-
-    <ul>
-      <li><a href="sample1/">Sample 1</a></li>
-      <li><a href="sample2/">Sample 2</a></li>
-      <li><a href="sample3/">Sample 3</a></li>
-    </ul>
+    <div class="content">
+      <h1>Data Science Project Dashboard</h1>
+      <p>Welcome! Click a project above.</p>
+    </div>
   </body>
 </html>
