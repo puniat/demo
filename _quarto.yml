@@ -1,1 +1,15 @@
+project:
+  type: website
 
+website:
+  title: "Data Science Dashboard"
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Sample 1
+        href: sample1.qmd
+      - text: Sample 2
+        href: sample2.qmd
+      - text: Sample 3
+        href: sample3.qmd
