@@ -1,28 +1,121 @@
 <!DOCTYPE html>
-<html>
-<body style="font-family: Arial; padding: 30px;">
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>About | Education vs Income Analysis</title>
 
-<h1>About</h1>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 
-<p>
-I’m Tulika, a high schooler at CJCP (Class of 2027).
-</p>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900" rel="stylesheet" />
 
-<p>
-Take a look at my 
-<a href="https://github.com/puniat">GitHub</a>, 
-and feel free to contact me at 
-<a href="mailto:puniatulika@gmail.com">puniatulika@gmail.com</a>.
-</p>
+    <link href="../css/styles.css" rel="stylesheet" />
 
-<p>
-This project explores the correlation between education level and income using data from Kaggle.
-</p>
+    <style>
+        .page-section-custom {
+            padding: 8rem 0 4rem;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #000000 0%, #0b0f14 75%, #161b22 100%);
+            color: white;
+        }
 
-<p>
-GitHub repository:
-<a href="https://github.com/puniat/income">https://github.com/puniat/income</a>
-</p>
+        .about-card {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 18px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        }
+
+        .about-card p, .about-card li {
+            color: rgba(255,255,255,0.8);
+            font-size: 1.05rem;
+        }
+
+        .about-card a {
+            color: #64a9ff;
+            text-decoration: none;
+        }
+
+        .about-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body id="page-top">
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="../index.html">Data Science Project</a>
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+            Menu <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../sample1/index.html">Graphs</a></li>
+                <li class="nav-item"><a class="nav-link active" href="index.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="../sample3/index.html">Sources</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="page-section-custom">
+    <div class="container px-4 px-lg-5">
+        <div class="text-center mb-5">
+            <h1 class="text-white mb-3">About</h1>
+            <p class="text-white-50 mx-auto" style="max-width: 700px;">
+                Learn more about the creator, the purpose of the project, and the tools used.
+            </p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="about-card">
+                    <h3 class="text-white mb-3">About the Creator</h3>
+                    <p>
+                        I’m Tulika, a high school student at CJCP (Class of 2027).
+                    </p>
+
+                    <h3 class="text-white mt-4 mb-3">About the Project</h3>
+                    <p>
+                        This project explores the correlation between education level and income
+                        using data from Kaggle. The goal is to better understand whether higher
+                        levels of education are associated with increased income and how this
+                        relationship appears across different demographic factors.
+                    </p>
+
+                    <h3 class="text-white mt-4 mb-3">Links</h3>
+                    <p>
+                        GitHub:
+                        <a href="https://github.com/puniat" target="_blank">github.com/puniat</a>
+                    </p>
+                    <p>
+                        Email:
+                        <a href="mailto:puniatulika@gmail.com">puniatulika@gmail.com</a>
+                    </p>
+                    <p>
+                        Project Repository:
+                        <a href="https://github.com/puniat/income" target="_blank">github.com/puniat/income</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer bg-black small text-center text-white-50">
+    <div class="container px-4 px-lg-5">
+        Data Science Project © 2026
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/scripts.js"></script>
 
 </body>
 </html>
