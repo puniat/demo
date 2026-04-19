@@ -1,1 +1,5 @@
+# Sample 1
 
+This is your income analysis.
+
+![graph](graph1.png)
