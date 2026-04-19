@@ -1,1 +1,7 @@
+# Data Science Project Dashboard
 
+Welcome! Click a project below:
+
+- [Sample 1](sample1/)
+- [Sample 2](sample2/)
+- [Sample 3](sample3/)
